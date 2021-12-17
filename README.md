@@ -7,6 +7,10 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+## Задача
+
+На сайте есть регистрация и вход для пользователей. и есть список книг.   Список книг видят все.  а добавлять книгу могут только зарегистрированные пользователи.  то есьт зарегистрировался и появляется над списком книг форма  где два поля - автор и название книг и кнопка "добавить".  Если кто-либо добавил книгу из залогиненных пользователей, то всем пользователям приходит письмо "на сайте появилась новая книга" и название книги в письме.   Админка не обязательна.   и подсказка - регистрация и логин и вход в админку уже идет в коробке с ларавел. нужно только установить нужный пакет.
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:

@@ -31,7 +31,7 @@ class SendNewBook extends Mailable
     public function build()
     {
         return $this->view('mail.send_new_book', [
-            'name' => $this->name
+            'name' => $this->name,
         ]);
     }
 }

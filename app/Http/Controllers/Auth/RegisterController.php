@@ -24,12 +24,15 @@ class RegisterController extends Controller
 
     use RegistersUsers;
 
+    const REDIRECT_LOGIN = '/login';
+    const REDIRECT_INDEX = '/';
+
     /**
      * Where to redirect users after registration.
      *
      * @var string
      */
-    protected $redirectTo = RouteServiceProvider::HOME;
+    protected $redirectTo = self::REDIRECT_INDEX;
 
     /**
      * Create a new controller instance.

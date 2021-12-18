@@ -29,7 +29,7 @@
                             </div>
                         @endforeach
                     @else
-                        {{ __('You are logged in!') }}
+                        {{ __('Add your books!') }}
                     @endif
                 </div>
             </div>

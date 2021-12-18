@@ -33,7 +33,7 @@ class BookController extends Controller
 
         $book = new Book();
         if($book->saveBook($request)){
-            return redirect()->route('my_book')->with('success', 'Книга "'. $book->name . '" успешно добавлено');
+            return redirect()->route('my_book')->with('success', 'Book "'. $book->name . '" successfully added');
         }
 
 

@@ -31,7 +31,7 @@ class Book extends Model
         if($this->save()){
             foreach ($this->allUser() as $user){
                 if($user->id != Auth::id()){
-                    $this->sendMailNewBook($user->email);
+                    $this->sendMailNewBook($user->email, $this->name);
                 }
             }
             return true;
@@ -41,8 +41,8 @@ class Book extends Model
         return  false;
     }
 
-    public function sendMailNewBook($email){
-        Mail::to($email)->send(new SendNewBook());
+    public function sendMailNewBook($email, $nameBook){
+        Mail::to($email)->send(new SendNewBook($nameBook));
     }
 
     public function allUser(){
